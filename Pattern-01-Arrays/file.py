@@ -24,8 +24,7 @@ Second Largest
 Third Largest
 Max Difference
 Min Difference
-Maximum Product
-Minimum Product
+
 
 
 
