@@ -91,8 +91,8 @@ for i in range(n-2, -1, -1):
 
 leaders.reverse()
 
-print(leaders)'''
-
+print(leaders)
+'''
 
 
 #find max and min product
@@ -123,13 +123,14 @@ for i in range(n):
 print(max_product)
 print(min_product)
 
+'''
 
-
-arr = [2, 3, -2, 4]
+'''arr = [2, 3, -2, 4]
 
 max_product = arr[0]
 min_product = arr[0]
-answer = arr[0]
+answer1 = arr[0]
+answer2=arr[0]
 
 for num in arr[1:]:
 
@@ -137,16 +138,18 @@ for num in arr[1:]:
                    num * max_product, 
                    num * min_product)
 
-    min_product = min(num, 
+    temp_min = min(num, 
                       num * max_product, 
                       num * min_product)
 
     max_product = temp_max
 
-    answer = max(answer, max_product)
-
-print(answer)'''
-
+    min_product = temp_min
+    answer1 = max(answer1, max_product)
+    answer2 = min(answer2, min_product)
+print(answer1)
+print(answer2)
+'''
 #kardanes Algo
 '''arr = [-2,1,-3,4,-1,2,1,-5,4]
 
@@ -183,15 +186,17 @@ for num in arr[1:]:
 
 print(max_sum)'''
 
+'''
+Pattern 2 – Array Problems
+ 
+✅ LC 121 – Best Time to Buy and Sell Stock
+✅ LC 122 – Best Time to Buy and Sell Stock II
+✅ LC 53  – Maximum Subarray (Kadane's Algorithm)
+✅ LC 152 – Maximum Product Subarray
+✅ LC 238 – Product of Array Except Self
+✅ LC 283 – Move Zeroes (Two Pointer)
+✅ LC 189 – Rotate Array (Reverse Algorithm)
+✅ LC 268 – Missing Number (Sum + XOR)
+✅ LC 287 – Find Duplicate Number (Floyd Cycle Detection)
+'''
 
-#leetcode 53 
-'''class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        currsum=nums[0]
-        maxsum=nums[0]
-
-        for num in nums[1:]:
-            currsum=max(num,currsum+num)
-            if currsum> maxsum:
-                maxsum=currsum
-        return maxsum'''
