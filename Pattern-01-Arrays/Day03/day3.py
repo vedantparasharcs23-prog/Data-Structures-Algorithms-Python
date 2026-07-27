@@ -37,7 +37,7 @@ print(candidate)
 '''
 
 
-#first repeating element
+'''#first repeating element
 
 arr=[4,3,3,4,3,5,6]
 
@@ -51,6 +51,34 @@ for num in arr:
 for num in arr:
     if freq[num]>1:
         print(num)
-        break
+        break'''
+#first non repeating element
 
 
+'''arr=[10,5,3,4,5,3,6] #if arr=[5,3,5,3] return -1
+freq={}
+for num in arr:
+    if num in freq:
+        freq[num]+=1
+    else:
+        freq[num]=1
+
+for num in arr:
+    if freq[num]==1:
+        print(num)
+        break '''
+
+
+#Union of two array
+
+arr1=[1,2,3,4,5,]
+arr2=[6,7,8,9,10]
+
+ans=set()
+
+
+for num in arr1:
+    ans.add(num)
+for num in arr2:
+    ans.add(num)
+print(list(ans))
