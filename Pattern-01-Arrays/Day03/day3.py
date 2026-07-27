@@ -71,7 +71,7 @@ for num in arr:
 
 #Union of two array
 
-arr1=[1,2,3,4,5,]
+'''arr1=[1,2,3,4,5,]
 arr2=[6,7,8,9,10]
 
 ans=set()
@@ -82,3 +82,21 @@ for num in arr1:
 for num in arr2:
     ans.add(num)
 print(list(ans))
+'''
+
+
+#last freqquency sort
+
+
+arr=[1,1,1,2,2,3]
+
+freq={}
+
+for num in arr:
+    if num in freq:
+        freq[num]+=1
+    else:
+        freq[num]=1
+
+arr.sort(key=lambda x: freq[x])
+print(arr)
