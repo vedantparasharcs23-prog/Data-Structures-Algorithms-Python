@@ -38,3 +38,64 @@ Rotated Array
 Matrix Search
 
 '''
+
+'''
+✅ Pattern 1 – Arrays
+1480
+724
+414
+121
+122
+53
+152
+238
+283
+189
+268
+287
+169
+136
+217
+349
+350
+242
+387
+747
+✅ Pattern 2 – HashMap / Prefix Sum
+242
+387
+349
+350
+560
+✅ Pattern 3 – Two Pointers
+26
+88
+75
+✅ Pattern 4 – Sliding Window
+643
+485
+1004
+3
+209
+904
+2461
+✅ Pattern 5 – Binary Search
+704
+35
+34
+278
+852
+162
+33
+81
+74
+📊 Total Progress
+✅ Arrays
+✅ HashMap
+✅ Two Pointers
+✅ Sliding Window
+✅ Binary Search
+
+Total: ~40 LeetCode questions revised
+
+'''
