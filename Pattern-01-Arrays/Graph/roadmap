@@ -1,0 +1,222 @@
+🌐 Graph DSA Roadmap — Complete
+🔵 Pattern 1 — Graph Basics
+
+Foundation
+
+Graph kya hota hai
+Vertex / Node
+Edge
+Directed vs Undirected
+Weighted vs Unweighted
+Adjacency Matrix
+Adjacency List
+Edge List
+Python mein Graph Representation
+Degree / In-degree / Out-degree
+
+Practice: Small graph creation + traversal preparation
+
+🟢 Pattern 2 — BFS
+BFS concept
+Queue + Visited
+BFS traversal
+Level-order traversal in Graph
+Connected Components using BFS
+Shortest path in unweighted graph
+LeetCode
+LC 733 — Flood Fill
+LC 994 — Rotting Oranges
+LC 542 — 01 Matrix
+LC 1091 — Shortest Path in Binary Matrix
+LC 127 — Word Ladder
+
+🧠 Pattern:
+
+Queue
+ ↓
+Pop
+ ↓
+Neighbors
+ ↓
+Unvisited → Queue
+ ↓
+Visited
+🟡 Pattern 3 — DFS
+Recursive DFS
+Iterative DFS
+Visited array/set
+Connected Components
+Number of Islands
+Flood Fill
+DFS on Grid
+LeetCode
+LC 200 — Number of Islands
+LC 695 — Max Area of Island
+LC 733 — Flood Fill
+LC 130 — Surrounded Regions
+LC 547 — Number of Provinces
+
+🧠 Pattern:
+
+Node
+ ↓
+Visited
+ ↓
+Neighbors
+ ↓
+DFS(neighbor)
+🔴 Pattern 4 — Cycle Detection
+Undirected Graph
+DFS cycle detection
+Parent concept
+BFS cycle detection
+Directed Graph
+Recursion Stack
+3-state DFS
+LeetCode
+LC 684 — Redundant Connection
+LC 261 — Graph Valid Tree
+LC 207 — Course Schedule
+LC 210 — Course Schedule II
+
+🧠 Important:
+
+Undirected:
+visited + parent
+
+Directed:
+visited + recursion stack
+🟣 Pattern 5 — Topological Sort
+What is Topological Sort?
+DAG
+Kahn's Algorithm — BFS
+DFS Topological Sort
+In-degree
+LeetCode
+LC 207 — Course Schedule
+LC 210 — Course Schedule II
+LC 802 — Find Eventual Safe States
+LC 2115 — Find All Possible Recipes
+
+🧠 Pattern:
+
+Indegree = 0
+     ↓
+Queue
+     ↓
+Remove node
+     ↓
+Decrease neighbors' indegree
+     ↓
+Indegree = 0 → Queue
+🟠 Pattern 6 — Bipartite Graph
+Bipartite graph
+2-coloring
+BFS coloring
+DFS coloring
+LeetCode
+LC 785 — Is Graph Bipartite?
+LC 886 — Possible Bipartition
+
+🧠 Pattern:
+
+Color 0
+   ↓
+Neighbors → Color 1
+   ↓
+Their neighbors → Color 0
+🟤 Pattern 7 — Union Find / DSU
+Disjoint Set
+Parent array
+Find
+Union
+Path Compression
+Union by Rank
+Union by Size
+LeetCode
+LC 547 — Number of Provinces
+LC 684 — Redundant Connection
+LC 1319 — Number of Operations to Make Network Connected
+LC 721 — Accounts Merge
+LC 990 — Satisfiability of Equality Equations
+
+🧠 Pattern:
+
+Find parent
+     ↓
+Same parent?
+ ↙       ↘
+Yes       No
+cycle    Union
+🔵 Pattern 8 — Shortest Path
+8A — BFS Shortest Path
+Unweighted graph
+Grid shortest path
+8B — Dijkstra
+Weighted graph
+Priority Queue
+Relaxation
+Distance array
+LeetCode
+LC 743 — Network Delay Time
+LC 787 — Cheapest Flights Within K Stops
+LC 1631 — Path With Minimum Effort
+LC 1514 — Path with Maximum Probability
+
+🧠 Dijkstra:
+
+distance
+   ↓
+min heap
+   ↓
+smallest distance
+   ↓
+relax neighbors
+🟢 Pattern 9 — Bellman-Ford
+Relaxation
+V−1 iterations
+Negative edges
+Negative cycle detection
+Practice
+Single-source shortest path with negative weights
+Negative cycle detection
+🟡 Pattern 10 — Minimum Spanning Tree
+Kruskal
+Sort edges
+DSU
+Pick smallest edge
+Avoid cycle
+Prim
+Min Heap
+Start from any node
+Pick minimum connecting edge
+LeetCode
+LC 1584 — Min Cost to Connect All Points
+LC 1135 — Connecting Cities With Minimum Cost
+
+🧠
+
+Kruskal → Sort + DSU
+Prim → Heap + Visited
+🔴 Pattern 11 — Advanced Graph / Grid
+Multi-source BFS
+0-1 BFS
+State-based BFS
+Graph + Bitmask basics
+Grid as Graph
+Shortest path with constraints
+LeetCode
+LC 994 — Rotting Oranges
+LC 542 — 01 Matrix
+LC 864 — Shortest Path to Get All Keys
+LC 1293 — Shortest Path in a Grid with Obstacles Elimination
+🟣 Pattern 12 — Advanced Graph Algorithms
+Tarjan's Algorithm
+Bridges
+Articulation Points
+Strongly Connected Components
+Kosaraju's Algorithm
+LeetCode / Practice
+LC 1192 — Critical Connections in a Network
+SCC-based problems
+Bridge / articulation practice
